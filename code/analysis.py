@@ -2,7 +2,6 @@
 import os
 import pandas as pd
 
-
 for root,dirs,files in os.walk(r'C:\Users\Suiu\PycharmProjects\ML-for-Good-Hackathon\code\data', topdown=False):
     for name in files:
         file_name = os.path.join(root, name)

@@ -20,10 +20,7 @@ for column in columns[5:68]:
     pd.options.display.float_format = '{:,.2f}'.format
     d1 = dataframes[0][column].dropna()
     d2 = dataframes[1][column].dropna()
-    # print('d1')
-    # print(d1)
-    # print('d2')
-    # print(d2)
+
     if not isinstance(d1,str) and not isinstance(d2,str) :
         t_stat, p = ttest_ind(d1, d2)
         if p < 0.05:
